@@ -1,0 +1,35 @@
+* source CMOS
+M_A1         OUT A N15859 0 MbreakN  
++ L=0.5E-6  
++ W=2.25E-6         
+M_C2         N15859 C N15902 0 MbreakN  
++ L=0.5E-6  
++ W=2.25E-6         
+M_B2         OUT B N15902 0 MbreakN  
++ L=0.5E-6  
++ W=2.25E-6         
+M_D2         N15902 D 0 0 MbreakN  
++ L=0.5E-6  
++ W=2.25E-6         
+V_V10         B 0  
++PWL 0ns 5v 100ns 5v 100.1ns 0v 400ns 0v 
+V_V12         C 0  
++PWL 0ns 5v 100ns 5v 100.1ns 0v 200ns 0v 200.1ns 5v 300ns 5v 300.1ns 0v 400ns
++  0v 
+V_V16         D 0  
++PWL 0ns 0v 300ns 0v 300.1ns 5v 400ns 5v 
+V_V17         A 0  
++PWL 0ns 0v 400ns 0v 
+V_V3         VDD 0 5Vdc
+M_M1         N31003 A VDD VDD MbreakP  
++ L=0.5E-6  
++ W=2.25E-6         
+M_M2         OUT D VDD VDD MbreakP  
++ L=0.5E-6  
++ W=2.25E-6         
+M_M3         N31003 C VDD VDD MbreakP  
++ L=0.5E-6  
++ W=2.25E-6         
+M_M4         OUT B N31003 VDD MbreakP  
++ L=0.5E-6  
++ W=2.25E-6         
